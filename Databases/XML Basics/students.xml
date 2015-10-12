@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xslt"?>
+<students name="Telerik Academy Students" 
+          xmlns:students="urn:students-telerik-academy">
+  <student>
+    <name>Peter Georgiev</name>
+    <sex>Male</sex>
+    <birthDate>1990-09-09</birthDate>
+    <phone>+359887123456</phone>
+    <email>pesho@mail.bg</email>
+    <course>DB</course>
+    <specialty>Ninja</specialty>
+    <facultyNumber>12345</facultyNumber>
+    <exams>
+      <exam>
+        <name>JS</name>
+        <tutor>Doncho Minkov</tutor>
+        <tutorEndorsements>5</tutorEndorsements>
+        <date>2015-03-09</date>
+        <score>280</score>
+      </exam>
+      <exam>
+        <name>C#</name>
+        <tutor>Nikolay Kostov</tutor>
+        <tutorEndorsements>7</tutorEndorsements>
+        <date>2015-06-10</date>
+        <score>395</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Gergana Petrova</name>
+    <sex>Female</sex>
+    <birthDate>1993-05-12</birthDate>
+    <phone>+359897654321</phone>
+    <email>gerry.petrova@mail.bg</email>
+    <course>DB</course>
+    <specialty>Ninja</specialty>
+    <facultyNumber>12346</facultyNumber>
+    <exams>
+      <exam>
+        <name>JS</name>
+        <tutor>Doncho Minkov</tutor>
+        <tutorEndorsements>6</tutorEndorsements>
+        <date>2015-03-09</date>
+        <score>350</score>
+      </exam>
+      <exam>
+        <name>C#</name>
+        <tutor>Nikolay Kostov</tutor>
+        <tutorEndorsements>4</tutorEndorsements>
+        <date>2015-06-10</date>
+        <score>230</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Ivan Dimitrov</name>
+    <sex>Male</sex>
+    <birthDate>1992-11-23</birthDate>
+    <phone>+359895555555</phone>
+    <email>vankata@mail.bg</email>
+    <course>DB</course>
+    <specialty>Ninja</specialty>
+    <facultyNumber>12333</facultyNumber>
+    <exams>
+      <exam>
+        <name>JS</name>
+        <tutor>Doncho Minkov</tutor>
+        <tutorEndorsements>9</tutorEndorsements>
+        <date>2015-03-09</date>
+        <score>410</score>
+      </exam>
+      <exam>
+        <name>C#</name>
+        <tutor>Nikolay Kostov</tutor>
+        <tutorEndorsements>8</tutorEndorsements>
+        <date>2015-06-10</date>
+        <score>430</score>
+      </exam>
+    </exams>
+  </student>
+</students>

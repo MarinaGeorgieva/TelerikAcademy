@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catalog>
+  <album>
+    <name>King of Limbs</name>
+    <artist>Radiohead</artist>
+    <year>2011</year>
+    <producer>Nigel Godrich</producer>
+    <price>18.99</price>
+    <songs>
+      <song>
+        <title>Bloom</title>
+        <duration>5:15</duration>
+      </song>
+      <song>
+        <title>Little by Little</title>
+        <duration>4:27</duration>
+      </song>
+      <song>
+        <title>Separator</title>
+        <duration>5:20</duration>
+      </song>
+      <song>
+        <title>Give Up the Ghost</title>
+        <duration>4:50</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Ghost Stories</name>
+    <artist>Coldplay</artist>
+    <year>2014</year>
+    <producer>Coldplay</producer>
+    <price>19.88</price>
+    <songs>
+      <song>
+        <title>Always in My Head</title>
+        <duration>3:36</duration>
+      </song>
+      <song>
+        <title>Magic</title>
+        <duration>4:45</duration>
+      </song>
+      <song>
+        <title>Ink</title>
+        <duration>3:48</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>One-X</name>
+    <artist>Three Days Grace</artist>
+    <year>2006</year>
+    <producer>Howard Benson</producer>
+    <price>20.99</price>
+    <songs>
+      <song>
+        <title>Pain</title>
+        <duration>3:23</duration>
+      </song>
+      <song>
+        <title>Never Too Late</title>
+        <duration>3:29</duration>
+      </song>
+      <song>
+        <title>Riot</title>
+        <duration>3:28</duration>
+      </song>
+      <song>
+        <title>Animal I Have Become</title>
+        <duration>3:51</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Human</name>
+    <artist>Three Days Grace</artist>
+    <year>2015</year>
+    <producer>Gavin Brown</producer>
+    <price>22.88</price>
+    <songs>
+      <song>
+        <title>Human Race</title>
+        <duration>4:09</duration>
+      </song>
+      <song>
+        <title>I Am Machine</title>
+        <duration>3:21</duration>
+      </song>
+    </songs>
+  </album>
+</catalog>

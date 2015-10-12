@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+	<album>
+		<name>King of Limbs</name>
+		<artist>Radiohead</artist>
+	</album>
+	<album>
+		<name>Ghost Stories</name>
+		<artist>Coldplay</artist>
+	</album>
+	<album>
+		<name>One-X</name>
+		<artist>Three Days Grace</artist>
+	</album>
+	<album>
+		<name>Human</name>
+		<artist>Three Days Grace</artist>
+	</album>
+</albums>

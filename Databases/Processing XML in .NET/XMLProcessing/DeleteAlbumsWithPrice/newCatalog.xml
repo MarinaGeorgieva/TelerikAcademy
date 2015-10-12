@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <album>
+    <name>King of Limbs</name>
+    <artist>Radiohead</artist>
+    <year>2011</year>
+    <producer>Nigel Godrich</producer>
+    <price>18.99</price>
+    <songs>
+      <song>
+        <title>Bloom</title>
+        <duration>5:15</duration>
+      </song>
+      <song>
+        <title>Little by Little</title>
+        <duration>4:27</duration>
+      </song>
+      <song>
+        <title>Separator</title>
+        <duration>5:20</duration>
+      </song>
+      <song>
+        <title>Give Up the Ghost</title>
+        <duration>4:50</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Ghost Stories</name>
+    <artist>Coldplay</artist>
+    <year>2014</year>
+    <producer>Coldplay</producer>
+    <price>19.88</price>
+    <songs>
+      <song>
+        <title>Always in My Head</title>
+        <duration>3:36</duration>
+      </song>
+      <song>
+        <title>Magic</title>
+        <duration>4:45</duration>
+      </song>
+      <song>
+        <title>Ink</title>
+        <duration>3:48</duration>
+      </song>
+    </songs>
+  </album>
+</catalog>
