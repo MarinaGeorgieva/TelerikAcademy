@@ -1,0 +1,35 @@
+******************************************************************************************************
+In computer programming, Eclipse is an integrated development environment (IDE). It contains a base
+workspace and an extensible plug-in system for customizing the environment. Written mostly in Java,
+Eclipse can be used to develop applications. By means of various plug-ins, Eclipse may also be used
+to develop applications in other programming languages: Ada, ABAP, C, C++, COBOL, Fortran, Haskell,
+JavaScript, Lasso, Natural, Perl, PHP, Prolog, Python, R, Ruby, Scala, Clojure, Groovy, Scheme, and
+Erlang.
+******************************************************************************************************
+NetBeans is an integrated development environment (IDE) for developing primarily with Java, but also
+with other languages, in particular PHP, C/C++, and HTML5. It is also an application platform 
+framework for Java desktop applications and others. The NetBeans IDE is written in Java and can run on
+Windows, OS X, Linux, Solaris and other platforms supporting a compatible JVM. The NetBeans Platform 
+allows applications to be developed from a set of modular software components called modules. 
+Applications based on the NetBeans Platform (including the NetBeans IDE itself) can be extended by 
+third party developers.
+******************************************************************************************************
+Xcode is an integrated development environment (IDE) containing a suite of software development tools
+developed by Apple for developing software for OS X and iOS. Xcode supports C, C++, Objective-C, 
+Objective-C++, Java, AppleScript, Python, Ruby, Rez, and Swift source code with a variety of 
+programming models, including but not limited to Cocoa, Carbon, and Java. Third parties have added 
+support for GNU Pascal, Free Pascal, Ada, C#, Perl and D.
+******************************************************************************************************
+Code::Blocks is a free, open source cross-platform IDE which supports multiple compilers including 
+GCC, Clang and Visual C++. It is developed in C++ using wxWidgets as the GUI toolkit. Using a plugin 
+architecture, its capabilities and features are defined by the provided plugins. Currently, 
+Code::Blocks is oriented towards C, C++, and Fortran. It has a custom build system and optional Make 
+support. Code::Blocks is being developed for Windows, Linux, and Mac OS X and has been ported to 
+FreeBSD, OpenBSD and Solaris.
+*******************************************************************************************************
+Komodo Edit is a free text editor for dynamic programming languages. It was introduced in January 2007
+to complement Active State's commercial Komodo IDE. With the release of version 4.3, Komodo Edit is 
+built on top of the Open Komodo project. Many of Komodo's features are derived from an embedded Python
+interpreter. Open Komodo uses Mozilla and Scintilla code base as they share many features and support
+the same languages (including Python, Perl, PHP, Ruby, Tcl, SQL, Smarty, CSS, HTML and XML) and 
+computer platforms (Linux, Mac OS X, and Windows). 
