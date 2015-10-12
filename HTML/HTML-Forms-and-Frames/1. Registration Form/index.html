@@ -1,0 +1,94 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registration Form</title>
+</head>
+<body>
+	<form>
+		<table border="1" style="border-collapse: collapse">
+			<thead>
+				<tr>
+					<th colspan="2">Registration Form</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr style="background: #6FDFDD">
+					<td colspan="2" style="text-align: center">
+						<input type="submit" value="Submit" />
+						<input type="reset" value="Clean This Form" />
+					</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td style="text-align: center"><label for="ln"><strong>Last Name</strong></label></td>
+					<td><input type="text" id="ln" name="last-name" style="width: 250px" /></td>
+				</tr>
+				<tr>
+					<td style="text-align: center"><label for="fn"><strong>First Name</strong></label></td>
+					<td><input type="text" id="fn" name="first-name" style="width: 250px" /></td>
+				</tr>
+				<tr>
+					<td style="text-align: center"><label for="address"><strong>Address</strong></label></td>
+					<td><textarea id="address" name="address" style="width: 240px; height: 70px"></textarea></td>
+				</tr>
+				<tr>
+					<td style="text-align: center"><label for="city"><strong>City</strong></label></td>
+					<td><input type="text" id="city" name="city" /><label for="state"> State </label><input type="text" id="state" name="state" style="width: 50px" />
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center"><label for="zip"><strong>Zip/Postal Code</strong></label></td>
+					<td><input type="text" id="zip" name="postal-code" style="width: 70px" /></td>
+				</tr>
+				<tr>
+					<td style="text-align: center"><label for="country"><strong>Country</strong></label></td>
+					<td>
+						<select id="country" name="country" style="width: 170px">
+							<option value="1" selected="selected">Bulgaria</option>
+							<option value="2" >Germany</option>
+							<option value="3" >Austria</option>
+							<option value="4" >Switzerland</option>
+							<option value="5" >Italy</option>
+							<option value="6" >France</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="phone"><strong>Phone(country code,<br />area code, number)</strong></label></td>
+					<td>(+<input type="tel" id="cc" name="country-code" style="width: 50px" />) <input type="tel" id="ac" name="area-code" style="width: 50px" /> <input type="tel" id="phone" name="phone" style="width: 120px" /></td>
+				</tr>
+				<tr>
+					<td style="text-align: center"><label for="email"><strong>E-mail</strong></label></td>
+					<td><input type="email" id="email" name="e-mail" style="width: 250px" /></td>
+				</tr>
+				<tr>
+					<td style="text-align: center"><label for="bd"><strong>Birth date</strong></label></td>
+					<td><input type="text" id="bd" name="birth-date" placeholder="дд.мм.гггг г." style="width: 170px"/></td>
+				</tr>
+				<tr>
+					<td style="text-align: center"><label for="gender"><strong>Gender</strong></label></td>
+					<td>
+						<select id="gender" name="gender" style="width: 70px">
+							<option value="1" selected="selected">Male</option>
+							<option value="2" >Female</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center"><label for="sd"><strong>Starting date</strong></label></td>
+					<td>
+						<input type="radio" id="sd" name="start-date" value="Spring" />Spring 2015
+						<input type="radio" id="sd" name="start-date" value="Summer" />Summer 2015
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center"><label for="cq"><strong>Comments/Questions</strong></label></td>
+					<td><textarea id="cq" name="comments/questions" style="width: 240px; height: 100px"></textarea></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>	
+</body>
+</html>
