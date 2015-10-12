@@ -1,0 +1,94 @@
+body {
+	font-family: 'Candara';
+}
+
+#wrapper {
+	border: 1px solid #000000;
+	border-radius: 7px;
+	width: 800px;
+	height: 550px;
+}
+
+header {
+	width: 800px;
+}
+
+header nav {
+	border-bottom: 1px solid #000000;
+	margin: 10px;
+	padding-bottom: 7px;
+	text-align: center;
+}
+
+header nav a {
+	color: #05B4F1;
+	font-size: 31px;
+	margin: 2px;
+}
+
+section {
+	float: left;
+	border: 1px solid #000000;
+	margin-left: 8px;
+	margin-right: 15px;
+	padding: 3px 3px 7px 3px;
+	width: 530px;
+}
+
+fieldset {
+	float: left;
+	display: inline-block;
+	margin: 0px 2px 1px 5px;
+	padding: 0px;
+	width: 250px;
+}
+
+fieldset legend {
+	font-size: 19px;
+	text-align: center;
+}
+
+fieldset img {
+	float: left;
+	margin-left: 3px;
+}
+
+fieldset div:first-of-type {
+	margin-top: 20px;
+	height: 80px;
+}
+
+fieldset div:first-of-type span {
+	display: inline-block;
+	font-size: 20px;
+	margin: 7px;
+}
+
+fieldset div:last-of-type {
+	margin-bottom: 3px;
+	margin-left: 10px;
+}
+
+fieldset div:last-of-type span {
+	font-size: 20px;
+	margin-left: 25px;
+}
+
+aside {
+	margin: 75px 0px 75px 0px;
+}
+
+aside div {
+	margin-bottom: 15px;
+}
+
+aside div span {
+	font-size: 25px;
+	margin-left: 10px;
+}
+
+aside input {
+	margin-left: 25px;
+	width: 170px;
+}
+

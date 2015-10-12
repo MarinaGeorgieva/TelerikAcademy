@@ -1,0 +1,16 @@
+linearGradient(from-color, from-pos, to-color, to-pos)
+	background: from-color; /* Old browsers */
+	background: -moz-linear-gradient(top,  from-color from-pos, to-color to-pos); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(from-pos,from-color), color-stop(to-pos,to-color)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  from-color from-pos,to-color to-pos); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  from-color from-pos,to-color to-pos); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  from-color from-pos,to-color to-pos); /* IE10+ */
+	background: linear-gradient(to bottom,  from-color from-pos,to-color to-pos); /* W3C */
+	
+clearfix()
+	zoom 1
+	&:after
+		display block
+		content ''
+		clear both
+		height 0

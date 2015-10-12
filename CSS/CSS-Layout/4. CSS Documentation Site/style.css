@@ -1,0 +1,160 @@
+body {
+	background-color: #F2F2F2;
+	font-size: 14px;
+}
+
+#wrapper {
+	border: 1px solid #000000;
+	padding: 1px;
+	width: 825px;
+	height: 610px;
+}
+
+nav {
+	float: left;
+}
+
+nav h3 {
+	display: inline;
+	font-family: 'Arial';
+	font-size: 12px;
+}
+
+nav img {
+	vertical-align: text-bottom;
+}
+
+a {
+	color: #950D0B;
+}
+
+nav ul {
+	font-family: 'Arial';
+	font-size: 12px;
+	list-style-type: none;
+	padding: 0px;
+}
+	
+	nav ul li a {
+		color: #000000;
+		text-decoration: none;
+	}
+
+	nav ul li:first-child {
+		color: #950D0B;
+		font-weight: bold;
+	}
+
+section {
+	background-color: #FFFFFF;
+	border: 1px solid #868686;
+	float: left;
+	margin: 0px 2px 0px 20px;
+	padding: 20px 5px;
+	width: 492px;
+}
+
+	section header h1 {
+		font-family: 'Arial';
+		margin-top: 0px;
+	}
+
+	section article {
+		width: 492px;
+	}
+
+button {
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	width: 100px;
+}
+
+button:nth-child(2n+1) {
+	text-align: left;
+}
+
+button:nth-child(2n) {
+	text-align: right;
+}
+
+.prev {
+	margin-right: 10px;
+}
+
+.next {
+	margin-left: 20px;
+}
+
+article > h2 {
+	background-color: #929292;
+	color: #FFFFFF;
+	font-family: 'Arial';
+	font-size: 14px;
+	padding-left: 3px;
+}
+
+#tutorial-article > img {
+	float: left;
+}
+
+#tutorial-article div p {
+	font-family: monospace;
+	font-size: 12px;
+	font-weight: bolder;
+}
+
+article div p {
+	font-family: 'Arial';
+	font-size: 13px;
+}
+
+article div a {
+	font-family: monospace;
+	font-size: 12px;
+}
+
+hr {
+	background-color: #929292;
+	color: #929292;
+	height: 1px;
+}
+
+footer hr:last-child {
+	margin-bottom: 20px;
+}
+
+aside {
+	float: left;
+}
+
+aside div {
+	border: 1px solid #868686;
+	display: block;
+	margin: 1px;
+	padding-bottom: 2px;
+	text-align: center;
+	width: 170px;
+}
+	
+	aside div h2 {
+		background-color: #929292;
+		color: #FFFFFF;
+		font-family: 'Arial';
+		font-size: 13px;
+		padding-left: 3px;
+	}
+
+	aside div input, aside div img, aside div a {
+		margin: 5px;
+	}
+
+	aside div input[type="text"] {
+		margin-right: 0px;
+		width: 100px;
+	}
+
+	aside div input[type="submit"] {
+		font-weight: bold;
+		margin-left: 0px;
+		width: 23px;
+	}

@@ -1,0 +1,25 @@
+ul {
+	list-style-type: none;
+}
+
+ul li a {
+	color: #000000;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	text-decoration: underline;
+
+}
+
+ul li:hover ul {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+.hidden li a {
+	color: #888888;
+}
