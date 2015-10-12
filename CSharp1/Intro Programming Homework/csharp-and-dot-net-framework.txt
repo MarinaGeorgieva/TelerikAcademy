@@ -1,0 +1,5 @@
+C# is a programming language developed by Microsoft for .NET. C# uses the framework .NET
+.NET is a framework built by Microsoft. .NET Framework is a large collection of Microsoft libraries 
+that you can use from your C# code. .NET is a framework which provides "ground" for applications which
+are created to use it. These application can be created using different programming languages: C# 
+(very common), Visual Basic .NET, F#, Managed C++. 
