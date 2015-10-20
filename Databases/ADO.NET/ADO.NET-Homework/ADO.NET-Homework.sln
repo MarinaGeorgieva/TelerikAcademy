@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetrieveCategoriesAndProduc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddNewProductInProductsTable", "AddNewProductInProductsTable\AddNewProductInProductsTable.csproj", "{B813EB40-1516-439B-AA99-9FFCB8CEE640}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadFromExcelFileAndDisplayData", "ReadFromExcelFileAndDisplayData\ReadFromExcelFileAndDisplayData.csproj", "{44DE1A5A-B813-4B2B-8128-354C6A8B0859}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteDataToExcelFile", "WriteDataToExcelFile\WriteDataToExcelFile.csproj", "{3EB26B9D-049E-4978-BE18-4004C362FC77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{B813EB40-1516-439B-AA99-9FFCB8CEE640}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B813EB40-1516-439B-AA99-9FFCB8CEE640}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B813EB40-1516-439B-AA99-9FFCB8CEE640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44DE1A5A-B813-4B2B-8128-354C6A8B0859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44DE1A5A-B813-4B2B-8128-354C6A8B0859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44DE1A5A-B813-4B2B-8128-354C6A8B0859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44DE1A5A-B813-4B2B-8128-354C6A8B0859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EB26B9D-049E-4978-BE18-4004C362FC77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB26B9D-049E-4978-BE18-4004C362FC77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB26B9D-049E-4978-BE18-4004C362FC77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB26B9D-049E-4978-BE18-4004C362FC77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
