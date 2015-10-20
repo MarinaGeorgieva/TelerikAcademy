@@ -184,6 +184,45 @@ WHERE Id = 10;
 -- 7. Define a function in the database TelerikAcademy that returns all Employee's names 
 -- (first or middle or last name) and all town's names that are comprised of given set of letters.
 
+use TelerikAcademy
+GO
+
+CREATE FUNCTION ufn_CheckName(@nameToCheck NVARCHAR(50), @letters nvarchar(50))
+RETURNS int AS
+BEGIN
+    DECLARE @i int = 1
+	DECLARE @currentChar nvarchar(1)
+    WHILE (@i <= LEN(@nameToCheck))
+		BEGIN
+			SET @currentChar = SUBSTRING(@nameToCheck,@i, 1)
+				IF (CHARINDEX(LOWER(@currentChar),LOWER(@letters)) <= 0) 
+					BEGIN  
+						RETURN 0
+					END
+			SET @i = @i + 1
+		END
+    RETURN 1
+END
+GO
+
+CREATE FUNCTION ufn_AllEmploeeysAndTownsBySetOfLetters(@format nvarchar(50))
+RETURNS @table TABLE
+	([Name] nvarchar(50) NOT NULL)
+AS
+BEGIN
+	INSERT @table
+	SELECT newTbl.LastName FROM
+		(SELECT LastName FROM Employees
+		UNION
+		SELECT Name FROM Towns) as newTbl
+		WHERE dbo.ufn_CheckName(newTbl.LastName, @format) > 0
+	 RETURN
+END
+GO
+
+SELECT * 
+FROM dbo.ufn_AllEmploeeysAndTownsBySetOfLetters('oistmiahf');
+
 -- 8. Using database cursor write a T-SQL script that scans 
 -- all employees and their addresses and prints all pairs of employees that live in the same town.
 
@@ -270,3 +309,46 @@ DEALLOCATE employeeCursor
 
 -- 10. Define a .NET aggregate function StrConcat that takes as input a sequence of strings 
 -- and return a single string that consists of the input strings separated by ','.
+USE TelerikAcademy
+GO
+
+IF NOT EXISTS (
+    SELECT value
+    FROM sys.configurations
+    WHERE name = 'clr enabled' AND value = 1
+)
+BEGIN
+    EXEC sp_configure @configname = clr_enabled, @configvalue = 1
+    RECONFIGURE
+END
+GO
+
+IF OBJECT_ID('dbo.concat') IS NOT NULL DROP Aggregate concat 
+GO 
+
+IF EXISTS (SELECT * FROM sys.assemblies WHERE name = 'concat_assembly') 
+       DROP assembly concat_assembly; 
+GO      
+
+CREATE Assembly concat_assembly 
+   AUTHORIZATION dbo 
+   FROM 'E:\Stuff\TelerikAcademy\Homeworks\Databases\Transact-SQL\SqlStringConcatenation.dll' 
+   WITH PERMISSION_SET = SAFE; 
+GO 
+
+CREATE AGGREGATE dbo.concat ( 
+
+    @Value NVARCHAR(MAX) 
+  , @Delimiter NVARCHAR(4000) 
+
+) RETURNS NVARCHAR(MAX) 
+EXTERNAL Name concat_assembly.concat; 
+GO  
+
+SELECT dbo.concat(FirstName + ' ' + LastName, ', ')
+FROM Employees
+GO
+
+DROP Aggregate concat; 
+DROP assembly concat_assembly; 
+GO
