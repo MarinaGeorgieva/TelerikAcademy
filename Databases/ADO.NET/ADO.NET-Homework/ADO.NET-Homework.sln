@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithMySqlDatabase", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithSQLiteDatabase", "WorkingWithSQLiteDatabase\WorkingWithSQLiteDatabase.csproj", "{6035B8CE-C28E-4AD3-B4D5-2CF91A0CFEBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetrieveImagesForAllCategoriesAsJpgFiles", "RetrieveImagesForAllCategoriesAsJpgFiles\RetrieveImagesForAllCategoriesAsJpgFiles.csproj", "{A1F3E069-79EB-421E-ACF6-5C82B7020FDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{6035B8CE-C28E-4AD3-B4D5-2CF91A0CFEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6035B8CE-C28E-4AD3-B4D5-2CF91A0CFEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6035B8CE-C28E-4AD3-B4D5-2CF91A0CFEBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F3E069-79EB-421E-ACF6-5C82B7020FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F3E069-79EB-421E-ACF6-5C82B7020FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F3E069-79EB-421E-ACF6-5C82B7020FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F3E069-79EB-421E-ACF6-5C82B7020FDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
