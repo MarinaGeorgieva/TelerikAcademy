@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DF16B002-06D7-4878-9EC7-EEDD306253B5}</ProjectGuid>
+    <ProjectGuid>{A4D4E070-8BAB-4D48-94B3-0D1E58841898}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CreatingNorthwindDbContext</RootNamespace>
-    <AssemblyName>CreatingNorthwindDbContext</AssemblyName>
+    <RootNamespace>ExtendingEmployeeClass</RootNamespace>
+    <AssemblyName>ExtendingEmployeeClass</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,8 +45,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,86 +53,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Category.cs">
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Customer.cs">
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerDemographic.cs">
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Employee.cs">
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeExtended.cs" />
-    <Compile Include="NorthwindEntities.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindEntities.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NorthwindEntities.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NorthwindEntities.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthwindEntities.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Order.cs">
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Order_Detail.cs">
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Product.cs">
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Region.cs">
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Shipper.cs">
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Supplier.cs">
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Territory.cs">
-      <DependentUpon>NorthwindEntities.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="NorthwindEntities.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NorthwindEntities.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="NorthwindEntities.edmx.diagram">
-      <DependentUpon>NorthwindEntities.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="NorthwindEntities.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NorthwindEntities.edmx</DependentUpon>
-      <LastGenOutput>NorthwindEntities.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="NorthwindEntities.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NorthwindEntities.edmx</DependentUpon>
-      <LastGenOutput>NorthwindEntities.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <ProjectReference Include="..\CreatingNorthwindDbContext\CreatingNorthwindDbContext.csproj">
+      <Project>{df16b002-06d7-4878-9ec7-eedd306253b5}</Project>
+      <Name>CreatingNorthwindDbContext</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

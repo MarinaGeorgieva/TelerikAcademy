@@ -9,6 +9,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertingUpdatingDeletingCu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCustomersWithOrdersToCanadaIn1997", "FindingCustomersWithOrdersToCanadaIn1997\FindingCustomersWithOrdersToCanadaIn1997.csproj", "{AAD31A6F-890B-4C66-89F5-D80F1B442F69}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCustomersWithOrdersToCanadaIn1997NativeSql", "FindingCustomersWithOrdersToCanadaIn1997NativeSql\FindingCustomersWithOrdersToCanadaIn1997NativeSql.csproj", "{0E00B65A-1635-4CCD-A88D-E417D27CE8D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingSalesBySpecifiedRegionAndPeriod", "FindingSalesBySpecifiedRegionAndPeriod\FindingSalesBySpecifiedRegionAndPeriod.csproj", "{C8FD2F9A-7A12-4625-9CBE-DC5E2B2F8485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingDatabaseNorthwindTwin", "CreatingDatabaseNorthwindTwin\CreatingDatabaseNorthwindTwin.csproj", "{A89C2425-8FEA-4D5C-8429-D2F6AEC4C927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentChangesWithTwoDataContexts", "ConcurrentChangesWithTwoDataContexts\ConcurrentChangesWithTwoDataContexts.csproj", "{2976A07D-8C53-44EE-9880-AFFE99E47F70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendingEmployeeClass", "ExtendingEmployeeClass\ExtendingEmployeeClass.csproj", "{A4D4E070-8BAB-4D48-94B3-0D1E58841898}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +37,26 @@ Global
 		{AAD31A6F-890B-4C66-89F5-D80F1B442F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAD31A6F-890B-4C66-89F5-D80F1B442F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAD31A6F-890B-4C66-89F5-D80F1B442F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E00B65A-1635-4CCD-A88D-E417D27CE8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E00B65A-1635-4CCD-A88D-E417D27CE8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E00B65A-1635-4CCD-A88D-E417D27CE8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E00B65A-1635-4CCD-A88D-E417D27CE8D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8FD2F9A-7A12-4625-9CBE-DC5E2B2F8485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8FD2F9A-7A12-4625-9CBE-DC5E2B2F8485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8FD2F9A-7A12-4625-9CBE-DC5E2B2F8485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8FD2F9A-7A12-4625-9CBE-DC5E2B2F8485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A89C2425-8FEA-4D5C-8429-D2F6AEC4C927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A89C2425-8FEA-4D5C-8429-D2F6AEC4C927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A89C2425-8FEA-4D5C-8429-D2F6AEC4C927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A89C2425-8FEA-4D5C-8429-D2F6AEC4C927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2976A07D-8C53-44EE-9880-AFFE99E47F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2976A07D-8C53-44EE-9880-AFFE99E47F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2976A07D-8C53-44EE-9880-AFFE99E47F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2976A07D-8C53-44EE-9880-AFFE99E47F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D4E070-8BAB-4D48-94B3-0D1E58841898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D4E070-8BAB-4D48-94B3-0D1E58841898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D4E070-8BAB-4D48-94B3-0D1E58841898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D4E070-8BAB-4D48-94B3-0D1E58841898}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

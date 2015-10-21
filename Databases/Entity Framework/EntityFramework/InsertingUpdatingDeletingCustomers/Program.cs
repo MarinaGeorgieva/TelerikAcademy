@@ -1,4 +1,6 @@
-﻿namespace InsertingUpdatingDeletingCustomers
+﻿// 2. Create a DAO class with static methods which provide functionality for inserting, modifying and deleting customers.
+
+namespace InsertingUpdatingDeletingCustomers
 {
     using System;
     using System.Linq;
@@ -19,7 +21,7 @@
             DeleteCustomer();
         }
 
-        public static void DeleteCustomer()
+        private static void DeleteCustomer()
         {
             using (var db = new NorthwindEntities())
             {
@@ -29,7 +31,7 @@
             }
         }
 
-        public static void ModifyCustomerCompany()
+        private static void ModifyCustomerCompany()
         {
             using (var db = new NorthwindEntities())
             {
@@ -41,7 +43,7 @@
             }
         }
 
-        public static string InsertNewCustomer()
+        private static string InsertNewCustomer()
         {
             using (var db = new NorthwindEntities())
             {

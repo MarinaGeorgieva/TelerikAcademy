@@ -1,4 +1,6 @@
-﻿namespace FindingCustomersWithOrdersToCanadaIn1997
+﻿// 3. Write a method that finds all customers who have orders made in 1997 and shipped to Canada.
+
+namespace FindingCustomersWithOrdersToCanadaIn1997
 {
     using CreatingNorthwindDbContext;
 
