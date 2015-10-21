@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingNorthwindDbContext", "CreatingNorthwindDbContext\CreatingNorthwindDbContext.csproj", "{DF16B002-06D7-4878-9EC7-EEDD306253B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertingUpdatingDeletingCustomers", "InsertingUpdatingDeletingCustomers\InsertingUpdatingDeletingCustomers.csproj", "{B530C7EE-FA8B-477B-8B66-92E72672257C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCustomersWithOrdersToCanadaIn1997", "FindingCustomersWithOrdersToCanadaIn1997\FindingCustomersWithOrdersToCanadaIn1997.csproj", "{AAD31A6F-890B-4C66-89F5-D80F1B442F69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF16B002-06D7-4878-9EC7-EEDD306253B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF16B002-06D7-4878-9EC7-EEDD306253B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF16B002-06D7-4878-9EC7-EEDD306253B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF16B002-06D7-4878-9EC7-EEDD306253B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B530C7EE-FA8B-477B-8B66-92E72672257C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B530C7EE-FA8B-477B-8B66-92E72672257C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B530C7EE-FA8B-477B-8B66-92E72672257C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B530C7EE-FA8B-477B-8B66-92E72672257C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAD31A6F-890B-4C66-89F5-D80F1B442F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD31A6F-890B-4C66-89F5-D80F1B442F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD31A6F-890B-4C66-89F5-D80F1B442F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD31A6F-890B-4C66-89F5-D80F1B442F69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
