@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{331892F5-7B96-4058-B420-D172468CBF34}</ProjectGuid>
+    <ProjectGuid>{B428BDE9-A059-4B9A-8F66-5FF9EC9E8783}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_3.SortSequenceInIncreasingOrder</RootNamespace>
-    <AssemblyName>3.SortSequenceInIncreasingOrder</AssemblyName>
+    <RootNamespace>_13.Queue</RootNamespace>
+    <AssemblyName>13.Queue</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LinkedQueue.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
