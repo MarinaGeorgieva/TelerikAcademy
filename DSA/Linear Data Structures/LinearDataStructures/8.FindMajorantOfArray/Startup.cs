@@ -1,12 +1,12 @@
-﻿namespace FindMajorantOfArray
+﻿namespace _8.FindMajorantOfArray
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
-    public class Startup
+    class Startup
     {
-        public static void Main()
+        static void Main(string[] args)
         {
             List<int> array = new List<int> { 2, 2, 3, 3, 2, 3, 4, 3, 3 };
             int minOccurrences = array.Count / 2 + 1;
@@ -28,25 +28,16 @@
                 index++;
             }
 
-            int maxCount = 1;
-            int majorant = elementsCount.Keys.First();
             foreach (var pair in elementsCount)
             {
-                if (pair.Value > maxCount)
+                if (pair.Value >= minOccurrences)
                 {
-                    maxCount = pair.Value;
-                    majorant = pair.Key;
+                    Console.WriteLine("The majorant of the array is {0}", pair.Key);
+                    return;
                 }
             }
 
-            if (maxCount >= minOccurrences)
-            {
-                Console.WriteLine("The majorant is {0}", majorant);
-            }
-            else
-            {
-                Console.WriteLine("The given array does not have a majorant!");
-            }
+            Console.WriteLine("The given array does not have a majorant!");
         }
     }
 }

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{61B2A16F-D032-43FB-9A96-B2F54512DB4D}</ProjectGuid>
+    <ProjectGuid>{95C5E168-BB63-4E5C-AEFD-316AECCDB8EB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_8.FindMajorantOfArray</RootNamespace>

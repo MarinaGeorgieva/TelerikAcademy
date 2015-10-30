@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.Stack", "12.Stack\12.Sta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.Queue", "13.Queue\13.Queue.csproj", "{B428BDE9-A059-4B9A-8F66-5FF9EC9E8783}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.FindMajorantOfArray", "8.FindMajorantOfArray\8.FindMajorantOfArray.csproj", "{95C5E168-BB63-4E5C-AEFD-316AECCDB8EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{B428BDE9-A059-4B9A-8F66-5FF9EC9E8783}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B428BDE9-A059-4B9A-8F66-5FF9EC9E8783}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B428BDE9-A059-4B9A-8F66-5FF9EC9E8783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95C5E168-BB63-4E5C-AEFD-316AECCDB8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C5E168-BB63-4E5C-AEFD-316AECCDB8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C5E168-BB63-4E5C-AEFD-316AECCDB8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C5E168-BB63-4E5C-AEFD-316AECCDB8EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

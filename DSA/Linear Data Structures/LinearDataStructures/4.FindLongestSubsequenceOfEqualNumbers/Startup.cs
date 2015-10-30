@@ -7,8 +7,11 @@
     {
         public static void Main()
         {
-            List<int> sequence = new List<int> { 2, 2, 5, 1, 6, 6, 6, 7, 1, 1, 1, 1, 1, 3, 3, 10, 8, 8, 8, 8, 8 };
+            List<int> sequence = new List<int> { 2, 2, 5, 1, 6, 6, 6, 7, 1, 1, 1, 1, 1, 3, 3, 10, 8, 8, 8, 8, 8, 8 };
             List<int> longestSubsequence = FindLongestSubsequence(sequence);
+            Console.WriteLine("Initial sequence:");
+            Console.WriteLine(string.Join(", ", sequence));
+            Console.WriteLine("The longest subsequence of equal numbers:");
             Console.WriteLine(string.Join(", ", longestSubsequence));
         }
 
