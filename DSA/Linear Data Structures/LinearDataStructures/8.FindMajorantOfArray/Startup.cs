@@ -1,12 +1,11 @@
-﻿namespace _8.FindMajorantOfArray
+﻿namespace FindMajorantOfArray
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
 
-    class Startup
+    public class Startup
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             List<int> array = new List<int> { 2, 2, 3, 3, 2, 3, 4, 3, 3 };
             int minOccurrences = array.Count / 2 + 1;
