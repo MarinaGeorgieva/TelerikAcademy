@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.Queue", "13.Queue\13.Que
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.FindMajorantOfArray", "8.FindMajorantOfArray\8.FindMajorantOfArray.csproj", "{95C5E168-BB63-4E5C-AEFD-316AECCDB8EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.Labyrinth", "14.Labyrinth\14.Labyrinth.csproj", "{4257B75C-27EC-40E3-94A5-95C2C1215916}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{95C5E168-BB63-4E5C-AEFD-316AECCDB8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95C5E168-BB63-4E5C-AEFD-316AECCDB8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95C5E168-BB63-4E5C-AEFD-316AECCDB8EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4257B75C-27EC-40E3-94A5-95C2C1215916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4257B75C-27EC-40E3-94A5-95C2C1215916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4257B75C-27EC-40E3-94A5-95C2C1215916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4257B75C-27EC-40E3-94A5-95C2C1215916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
