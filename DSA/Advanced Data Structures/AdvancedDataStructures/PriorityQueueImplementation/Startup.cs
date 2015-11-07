@@ -14,9 +14,9 @@
             priorityQueue.Enqueue(1);
             priorityQueue.Enqueue(8);
             priorityQueue.Enqueue(7);
+            priorityQueue.Enqueue(2);
 
             Console.WriteLine(priorityQueue.Peek());
-
             while (priorityQueue.Count > 0)
             {
                 Console.WriteLine(priorityQueue.Dequeue());
