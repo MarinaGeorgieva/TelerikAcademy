@@ -6,6 +6,6 @@
     public interface IStringService
     {
         [OperationContract]
-        int CountOccurrences(string firstString, string secondString);      
+        int CountOccurrences(string first, string second);      
     }    
 }
