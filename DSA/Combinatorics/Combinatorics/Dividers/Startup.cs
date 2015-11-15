@@ -46,7 +46,7 @@
             }
 
             dividеrsCount = 2;
-            int maxDividеr = (int)Math.Truncate(Math.Sqrt(number));
+            int maxDividеr = (int)Math.Sqrt(number);
             for (int dividеr = 2; dividеr <= maxDividеr; dividеr++)
             {
                 if (number % dividеr == 0)
