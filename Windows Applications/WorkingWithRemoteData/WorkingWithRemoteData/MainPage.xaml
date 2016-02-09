@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="WorkingWithRemoteData.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WorkingWithRemoteData"
+    xmlns:viewModels="using:WorkingWithRemoteData.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.DataContext>
+            <viewModels:PopularProjectsViewModel />
+        </Grid.DataContext>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0"
+                HorizontalAlignment="Stretch"
+                Foreground="Black"
+                Background="Green"
+                FontSize="18"
+                Content="Show Projects" 
+                Command="{Binding Show}"/>
+        <ScrollViewer Grid.Row="1">
+            <ListView ItemsSource="{Binding Projects}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Image Grid.Row="0"
+                                   HorizontalAlignment="Stretch"
+                                   VerticalAlignment="Stretch"
+                                   Source="{Binding MainImageUrl}" />
+                            <TextBlock Grid.Row="1"
+                                       HorizontalAlignment="Center"
+                                       Text="{Binding Title}"
+                                       FontSize="18"/>
+                            <StackPanel Orientation="Horizontal"
+                                        Grid.Row="2">
+                                <TextBlock Text="{Binding ShortDate}" Margin="10" Foreground="LawnGreen" />
+                                <SymbolIcon Symbol="View" />
+                                <TextBlock Text="{Binding Visits}" Margin="10"/>
+                                <SymbolIcon Symbol="Like"/>
+                                <TextBlock Text="{Binding Likes}" Margin="10"/>
+                                <SymbolIcon Symbol="Comment" />
+                                <TextBlock Text="{Binding Comments}" Margin="10"/>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollViewer>
+    </Grid>
+</Page>
