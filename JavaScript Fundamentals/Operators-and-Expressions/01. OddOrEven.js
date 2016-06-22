@@ -2,14 +2,15 @@
 
 // Write an expression that checks if given integer is odd or even.
 
-function isEven(number) {
-	if (number % 2 == 0) {
-		return true;
-	}
-	else {
-		return false;
+function solve(args) {
+	var number = parseInt(args[0]);
+
+	if (number % 2) {
+		return "odd " + number;
+	} else {
+		return "even " + number;
 	}
 }
 
-console.log(isEven(7));
-console.log(isEven(10));
+console.log(solve(["7"]));
+console.log(solve(["10"]));

@@ -3,19 +3,21 @@
 // Write an expression that checks for given integer if its third digit 
 // (right-to-left) is 7.
 
-function isSeven(number) {
-	if (Math.floor(number / 100 % 10) == 7) {
-		return true;
-	}
-	else {
-		return false;
+function solve(args) {
+	var number = +args[0];
+
+	var thirdDigit = Math.floor(number / 100 % 10);
+	if (thirdDigit == 7) {
+		return "true";
+	} else {
+		return "false " + thirdDigit;
 	}
 }
 
-console.log(isSeven(701));
-console.log(isSeven(5));
-console.log(isSeven(1732));
-console.log(isSeven(9703));
-console.log(isSeven(877));
-console.log(isSeven(777877));
-console.log(isSeven(9999799));
+console.log(solve(["701"]));
+console.log(solve(["5"]));
+console.log(solve(["1732"]));
+console.log(solve(["9703"]));
+console.log(solve(["877"]));
+console.log(solve(["777877"]));
+console.log(solve(["9999799"]));
