@@ -3,28 +3,30 @@
 // Write a script that finds the greatest of given 5 variables.
 // Use nested if statements.
 
-var a = 5,
-	b = 2,
-	c = 2,
-	d = 4,
-	e = 1;
+function solve(args) {
+	var a = +args[0],
+		b = +args[1],
+		c = +args[2],
+		d = +args[3],
+		e = +args[4];
 
-var greatest = a;
+	var greatest = a;
 
-if (greatest < b) {
-	greatest = b;
+	if (greatest < b) {
+		greatest = b;
+	}
+
+	if (greatest < c) {
+		greatest = c;
+	}
+
+	if (greatest < d) {
+		greatest = d;
+	}
+
+	if (greatest < e) {
+		greatest = e;
+	}
+
+	return greatest;
 }
-
-if (greatest < c) {
-	greatest = c;
-}
-
-if (greatest < d) {
-	greatest = d;
-}
-
-if (greatest < e) {
-	greatest = e;
-} 
-
-console.log(greatest);

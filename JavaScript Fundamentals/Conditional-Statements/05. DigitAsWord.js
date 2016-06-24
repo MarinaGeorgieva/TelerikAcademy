@@ -5,38 +5,45 @@
 // Print “not a digit” in case of invalid input.
 // Use a switch statement.
 
-function getDigitName(digit) {
-	switch (digit) {
-		case 0: console.log('zero');
-				break;
-		case 1: console.log('one');
-				break;
-		case 2: console.log('two');
-				break;
-		case 3: console.log('three');
-				break;
-		case 4: console.log('four');
-				break;
-		case 5: console.log('five');
-				break;
-		case 6: console.log('six');
-				break;
-		case 7: console.log('seven');
-				break;
-		case 8: console.log('eight');
-				break;
-		case 9: console.log('nine');
-				break;
-		default: console.log('not a digit');
-				break;
-	}
-}
+function solve(args) {
+	var digit = +args[0],
+		result;
 
-getDigitName(2);
-getDigitName(1);
-getDigitName(0);
-getDigitName(5);
-getDigitName(-0.1);
-getDigitName('hi');
-getDigitName(9);
-getDigitName(10);
+	switch (digit) {
+		case 0:
+			result = 'zero';
+			break;
+		case 1:
+			result = 'one';
+			break;
+		case 2:
+			result = 'two';
+			break;
+		case 3:
+			result = 'three';
+			break;
+		case 4:
+			result = 'four';
+			break;
+		case 5:
+			result = 'five';
+			break;
+		case 6:
+			result = 'six';
+			break;
+		case 7:
+			result = 'seven';
+			break;
+		case 8:
+			result = 'eight';
+			break;
+		case 9:
+			result = 'nine';
+			break;
+		default:
+			result = 'not a digit';
+			break;
+	}
+
+	return result;
+}

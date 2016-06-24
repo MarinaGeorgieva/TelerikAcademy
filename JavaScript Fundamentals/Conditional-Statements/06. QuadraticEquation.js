@@ -4,32 +4,42 @@
 // equation ax^2 + bx + c = 0 and solves it (prints its real roots).
 // Calculates and prints its real roots.
 
-function solve(a, b, c) {
+function solve(args) {
+	var a = +args[0],
+		b = +args[1],
+		c = +args[2],
+		x1,
+		x2,
+		result;
+
 	var discriminant = b * b - 4 * a * c;
 
 	if (a == 0) {
 		if (b == 0) {
-			console.log('no solution');
+			result = 'no real roots';
+		} else {
+			x1 = -c / b;
+			result = 'x1=' + x1.toFixed(2);
 		}
-		else {
-			console.log('x = ' + -c / b);
-		}
-	}
-	else {
+	} else {
 		if (discriminant > 0) {
-			console.log('x1 = ' + (-b + Math.sqrt(discriminant)) / (2 * a) + '; ' + 
-				'x2 = ' + (-b - Math.sqrt(discriminant)) / (2 * a));
-		}
-		else if (discriminant == 0) {
-			console.log('x1 = x2 = ' + (-b / (2 * a)));
-		}
-		else {
-			console.log('no real roots');
+			var x1 = (-b - Math.sqrt(discriminant)) / (2 * a),
+				x2 = (-b + Math.sqrt(discriminant)) / (2 * a);
+
+			if (x1 > x2) {
+				var temp = x1;
+				x1 = x2;
+				x2 = temp;
+			}
+
+			result = 'x1=' + x1.toFixed(2) + '; ' + 'x2=' + x2.toFixed(2);
+		} else if (discriminant == 0) {
+			x1 = (-b / (2 * a));
+			result = 'x1=x2=' + x1.toFixed(2);
+		} else {
+			result = 'no real roots';
 		}
 	}
-}
 
-solve(2, 5, -3);
-solve(-1, 3, 0);
-solve(-0.5, 4, -8);
-solve(5, 2, 8);
+	return result;
+}

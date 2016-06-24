@@ -3,12 +3,12 @@
 // Write a script that converts a number in the range [0…999] to words, 
 // corresponding to its English pronunciation.
 
-function getNumberName(number) {
-	number = +number;
-	var hundreds = Math.floor(number / 100);
-	var tens = Math.floor(number % 100 / 10);
-	var ones = Math.floor(number % 100 % 10);
-	var result = '';
+function solve(args) {
+	var number = +args[0],
+		hundreds = Math.floor(number / 100),
+		tens = Math.floor(number % 100 / 10),
+		ones = Math.floor(number % 100 % 10),
+		result = '';
 
 	if (hundreds > 0) {
 		switch (hundreds) {
@@ -48,115 +48,100 @@ function getNumberName(number) {
 	if (tens > 1) {
 		switch (tens) {
 			case 2:
-				result += 'Twenty ';
+				result += 'twenty ';
 				break;
 			case 3:
-				result += 'Thirty ';
+				result += 'thirty ';
 				break;
 			case 4:
-				result += 'Fourty ';
+				result += 'fourty ';
 				break;
 			case 5:
-				result += 'Fifty ';
+				result += 'fifty ';
 				break;
 			case 6:
-				result += 'Sixty ';
+				result += 'sixty ';
 				break;
 			case 7:
-				result += 'Seventy ';
+				result += 'seventy ';
 				break;
 			case 8:
-				result += 'Eighty ';
+				result += 'eighty ';
 				break;
 			case 9:
-				result += 'Ninety ';
+				result += 'ninety ';
 				break;
 		}
 	} else if (tens == 1) {
 		switch (ones) {
 			case 0:
-				result += 'Ten';
+				result += 'ten';
 				break;
 			case 1:
-				result += 'Eleven ';
+				result += 'eleven ';
 				break;
 			case 2:
-				result += 'Twelve ';
+				result += 'twelve ';
 				break;
 			case 3:
-				result += 'Thirteen ';
+				result += 'thirteen ';
 				break;
 			case 4:
-				result += 'Fourteen ';
+				result += 'fourteen ';
 				break;
 			case 5:
-				result += 'Fifteen ';
+				result += 'fifteen ';
 				break;
 			case 6:
-				result += 'Sixteen ';
+				result += 'sixteen ';
 				break;
 			case 7:
-				result += 'Seventeen ';
+				result += 'seventeen ';
 				break;
 			case 8:
-				result += 'Eighteen ';
+				result += 'eighteen ';
 				break;
 			case 9:
-				result += 'Nineteen ';
+				result += 'nineteen ';
 				break;
 		}
 	}
 	if (tens != 1) {
 		switch (ones) {
 			case 1:
-				result += 'One';
+				result += 'one';
 				break;
 			case 2:
-				result += 'Two';
+				result += 'two';
 				break;
 			case 3:
-				result += 'Three';
+				result += 'three';
 				break;
 			case 4:
-				result += 'Four';
+				result += 'four';
 				break;
 			case 5:
-				result += 'Five';
+				result += 'five';
 				break;
 			case 6:
-				result += 'Six';
+				result += 'six';
 				break;
 			case 7:
-				result += 'Seven';
+				result += 'seven';
 				break;
 			case 8:
-				result += 'Eight';
+				result += 'eight';
 				break;
 			case 9:
-				result += 'Nine';
+				result += 'nine';
 				break;
 		}
 	}
 
-	console.log(result);
-
 	if (hundreds == 0 && tens == 0 && ones == 0) {
-		console.log('Zero');
+		return 'Zero';
 	}
 
-	
+	result = result.trim();
+	return result.charAt(0).toUpperCase() + result.slice(1);
 }
-
-getNumberName(0);
-getNumberName(9);
-getNumberName(10);
-getNumberName(12);
-getNumberName(19);
-getNumberName(25);
-getNumberName(98);
-getNumberName(273);
-getNumberName(400);
-getNumberName(501);
-getNumberName(617);
-getNumberName(711);
-getNumberName(999);
