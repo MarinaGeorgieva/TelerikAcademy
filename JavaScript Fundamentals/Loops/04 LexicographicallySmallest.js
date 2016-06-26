@@ -46,4 +46,3 @@ getMaxProperty(window);
 console.log('navigator');
 getMinProperty(navigator);
 getMaxProperty(navigator);
-
