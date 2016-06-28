@@ -1,30 +1,41 @@
 // Problem 4. Maximal increasing sequence
 
-// Write a script that finds the maximal increasing sequence in an array.
+// Write a program that finds the length of the maximal increasing 
+// sequence in an array of N integers.
 
-var array = [3, 2, 3, 4, 2, 2, 4],
-	len = 1,
-	maxLen = 1, 
-	end,
-	maxEnd,
-	result = [];
+function solve(args) {
+	var newArgs = args[0].split('\n');
 
-for (var i = 0; i < array.length - 1; i += 1) {
-	if (array[i] < array[i + 1]) {
-		len += 1;
-		end = i + 1;
-		if (maxLen < len) {
-			maxLen = len;
-			maxEnd = end;
+	var array = newArgs.map(function(num) {
+		return +num;
+	});
+	array.shift();
+
+	var n = +newArgs[0],
+		i,
+		len = 1,
+		maxLen = 1;
+	// end,
+	// maxEnd,
+	// result = [];
+
+	for (i = 0; i < n - 1; i += 1) {
+		if (array[i] < array[i + 1]) {
+			len += 1;
+			// end = i + 1;
+			if (maxLen < len) {
+				maxLen = len;
+				// maxEnd = end;
+			}
+		} else {
+			len = 1;
 		}
 	}
-	else {
-		len = 1;
-	}
-}
 
-for (var i = maxEnd - maxLen + 1; i <= maxEnd; i++) {
-	result.push(array[i]);
-}
+	// for (i = maxEnd - maxLen + 1; i <= maxEnd; i++) {
+	// 	result.push(array[i]);
+	// }
 
-console.log(result);
+	// console.log(result);
+	console.log(maxLen);
+}

@@ -1,26 +1,26 @@
 // Problem 6. Most frequent number
 
-// Write a script that finds the most frequent number in an array.
+// Write a program that finds the most frequent number in an array of N elements.
 
-var array = [4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3],
-	counter = 1,
-	maxCounter = 1,
-	number,
-	maxNumber;
+function solve(args) {
+	var array = args[0].split('\n').map(function(num) {
+		return +num;
+	});
 
-for (var index = 0; index < array.length - 1; index += 1) {
-	number = array[index];
-	for (var j = index + 1; j < array.length; j += 1) {
-		if (number === array[j]) {
-			counter += 1;
+	var n = array.shift(),
+		i,
+		occurrences = {},
+		maxCount = 1,
+		maxNumber;
+
+	for (i = 0; i < n; i += 1) {
+		occurrences[array[i]] = (occurrences[array[i]] || 0) + 1;
+
+		if (maxCount < occurrences[array[i]]) {
+			maxCount = occurrences[array[i]];
+			maxNumber = array[i];
 		}
 	}
 
-	if (counter > maxCounter) {
-		maxCounter = counter;
-		maxNumber = number;
-	}
-	counter = 1;
+	return maxNumber + ' (' + maxCount + ' times)';
 }
-
-console.log('Most frequent number is ' + maxNumber + ' (' + maxCounter + ' times)');
